@@ -122,10 +122,10 @@ static void wl_keyboard_key(void *data, struct wl_keyboard *wl_keyboard,
 	uint32_t codepoint = xkb_state_key_get_utf32(sgflow_state->xkb_state, keycode);
 	if (key_state == WL_KEYBOARD_KEY_STATE_PRESSED) {
 		switch (sym) {
-			case XKB_KEY_Escape:
+		case XKB_KEY_Escape:
 				g_application_quit(G_APPLICATION(sgflow_state->application));
 				break;
-			default:
+		default:
 				break;
 		}
 	}

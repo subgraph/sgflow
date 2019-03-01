@@ -46,7 +46,7 @@ static void launch_application(Result *result, struct sgflow_state *sgflow_state
 
 			// This is to make the window disappear and then give a moment to launch
 			// an app before quitting (I'm talking to you, Nautilus)
-		    gtk_widget_hide(GTK_WIDGET(active_window));	
+			gtk_widget_hide(GTK_WIDGET(active_window));	
 			gdk_window_process_all_updates();
 			sleep(2);
 			g_object_unref(desktop_app_info);
@@ -275,7 +275,7 @@ static void create_ui(struct sgflow_state *sgflow_state) {
 			const char *app_id = g_app_info_get_id(item->data);
 			GdkPixbuf *icon = get_icon_from_app_info(item->data);
 			const char *display_name = g_app_info_get_display_name(item->data);
-		    const char *tag = "";
+			const char *tag = "";
 			const char *category = "APPLICATION";
 			const char *keywords = g_desktop_app_info_get_categories(G_DESKTOP_APP_INFO(item->data));
 			if (icon != NULL) {
@@ -327,11 +327,11 @@ static void activate(GtkApplication *app, gpointer user_data) {
 void sgflow_destroy(struct sgflow_state *sgflow_state) {
 	// TODO: Better cleanup
 	if (sgflow_state->layer_shell != NULL) {
-    	zwlr_layer_shell_v1_destroy(sgflow_state->layer_shell);
+    		zwlr_layer_shell_v1_destroy(sgflow_state->layer_shell);
 	}
 
 	if (sgflow_state->layer_surface != NULL) {
-    	zwlr_layer_surface_v1_destroy(sgflow_state->layer_surface);
+    		zwlr_layer_surface_v1_destroy(sgflow_state->layer_surface);
 	}
 
 	if (sgflow_state->xdg_output_manager != NULL) {
