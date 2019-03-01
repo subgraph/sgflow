@@ -1,6 +1,6 @@
 # Subgraph Flow
 
-`sgflow` is a launcher application that runs in the Sway window manager. It
+`sgflow` is a launcher application targetting the Sway window manager. It
 is similar to applications such as `dmenu` and `rofi`. 
 
 ![Screenshot](sgflow_screenshot.png)
@@ -13,7 +13,8 @@ configuration) features specifically for users of Subgraph Citadel -- namely
 features to support the paradigms of Citadel such as `realms`.
 
 It may also work in other window managers that are based on `wlroots` though
-it is not designed to nor has this been tested.
+it is not designed to nor has this been tested. It requires some Wayland
+protocol extensions that are exclusive to `wlroots`.
 
 ## Design
 
