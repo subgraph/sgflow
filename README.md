@@ -3,7 +3,7 @@
 `sgflow` is a launcher application that runs in the Sway window manager. It
 is similar to applications such as `dmenu` and `rofi`. 
 
-![Screenshot)(sgflow_screenshot.png)
+![Screenshot](sgflow_screenshot.png)
 
 ## Audience
 
