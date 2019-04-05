@@ -56,4 +56,5 @@ executable(
 	resources,
 	include_directories: [inc],
 	dependencies: deps,
+	install: true
 )
